@@ -1,0 +1,6 @@
+<%= form_for @admin_user, url: {action: "create"}, html: {class: "user_form"} do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :role %>
+  <%= f.check_box :is_admin %>
+  <%= f.submit "create" %>
+<% end %>
